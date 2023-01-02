@@ -24,7 +24,7 @@ const Board = () => {
   };
 
   const restartGame = () => {
-    setSquareValues(squareValues.map((value) => "_"));
+    setSquareValues(squareValues.map(() => "_"));
     setIsEx(true);
   };
 

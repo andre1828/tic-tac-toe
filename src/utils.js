@@ -36,14 +36,9 @@ const patternHasBeenSelected = (pattern, squareValues) => {
   );
 };
 
-const isGameOver = () => {
-  return isDraw() && isVictory();
-};
-
 export const isDraw = (squareValues) =>
   isAllSquaresSeleted(squareValues) && !isVictory(squareValues);
 
 const isAllSquaresSeleted = (squareValues) =>
   !squareValues.some((value) => value === "_");
-
-const getWinner = () => {};
+  
